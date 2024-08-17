@@ -8,11 +8,7 @@ public class DrawWithMouse : MonoBehaviour {
     [SerializeField] private GameObject line;
     private Coroutine _drawing;
 
-    public List<Vector2> Points { get; private set; } = new();
-
-    private void Start() {
-        Points.Add(new Vector2(0, 0));
-    }
+    public List<Vector3> Points { get; private set; } = new();
     
     private void Update() {
         if (Input.GetMouseButtonDown(0)) StartLine();
@@ -35,8 +31,8 @@ public class DrawWithMouse : MonoBehaviour {
 
         while (true) {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Points.Add(new Vector2(position.x, position.y));
             position.z = 0;
+            Points.Add(position);
             lineRenderer.positionCount++;
             lineRenderer.SetPosition(lineRenderer.positionCount - 1, position);
             yield return null;
