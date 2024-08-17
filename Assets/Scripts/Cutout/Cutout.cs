@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Cutout : MonoBehaviour {
     [SerializeField] private GameObject baseSprite;
+    [SerializeField] private GameObject cardboard;
+    [SerializeField] private ParticleSystem particles;
     
     private DrawWithMouse _drawing;
     private CreatePolygon _polygon;
@@ -16,18 +18,23 @@ public class Cutout : MonoBehaviour {
         if (PersistenceManager.Instance.cutoutMesh != null) {
             _complete = true;
         }
-        _drawing = GetComponent<DrawWithMouse>();
-        _polygon = GetComponent<CreatePolygon>();
-        _checkAccuracy = GetComponent<CheckAccuracy>();
+        else {
+            _drawing = GetComponent<DrawWithMouse>();
+            _polygon = GetComponent<CreatePolygon>();
+            _checkAccuracy = GetComponent<CheckAccuracy>();
+        }
     }
 
     private void Update() {
-        if (_drawing.LineDrawn && !_complete) {
-            _polygon.Build();
-            _score = _checkAccuracy.CalculateScore();
-            baseSprite.SetActive(false);
-            _complete = true;
-            SceneManager.LoadScene("DressUpGame", LoadSceneMode.Single);
+        if (!_complete) {
+            if (_drawing.LineDrawn) {
+                _polygon.Build();
+                _score = _checkAccuracy.CalculateScore();
+                baseSprite.SetActive(false);
+                cardboard.SetActive(false);
+                _complete = true;
+                // SceneManager.LoadScene("DressUpGame", LoadSceneMode.Single);
+            }
         }
     }
 }

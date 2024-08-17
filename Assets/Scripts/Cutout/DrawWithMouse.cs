@@ -36,10 +36,15 @@ public class DrawWithMouse : MonoBehaviour {
 
         while (true) {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            position.z = 0;
-            Points.Add(position);
-            lineRenderer.positionCount++;
-            lineRenderer.SetPosition(lineRenderer.positionCount - 1, position);
+            Collider2D targetObject = Physics2D.OverlapPoint(position);
+            if (targetObject) {
+                if (targetObject.gameObject.name == "Cardboard") {
+                    position.z = 0;
+                    Points.Add(position);
+                    lineRenderer.positionCount++;
+                    lineRenderer.SetPosition(lineRenderer.positionCount - 1, position);
+                };
+            }
             yield return null;
         }
     }

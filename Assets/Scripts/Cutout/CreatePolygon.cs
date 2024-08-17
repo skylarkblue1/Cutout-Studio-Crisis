@@ -13,13 +13,13 @@ public class CreatePolygon : MonoBehaviour {
     private Mesh _mesh;
 
     private void Start() {
+        _polygonCollider = polygon.GetComponent<PolygonCollider2D>();
         if (PersistenceManager.Instance.cutoutMesh != null)
         {
             _mesh = PersistenceManager.Instance.cutoutMesh;
             GetComponent<MeshFilter>().mesh = _mesh;
-        }
-        else {
-            _polygonCollider = polygon.GetComponent<PolygonCollider2D>();
+            
+            _polygonCollider.points = _mesh.vertices.Select(p => new Vector2(p.x, p.y)).ToArray();
         }
     }
 
@@ -30,6 +30,8 @@ public class CreatePolygon : MonoBehaviour {
         Vector2[] points = simplifiedPoints.Select(p => new Vector2(p.x, p.y)).ToArray();
 
         _polygonCollider.points = points;
+        
+        PersistenceManager.Instance.polygonPoints = points;
 
         if (_mesh) _mesh.Clear();
 

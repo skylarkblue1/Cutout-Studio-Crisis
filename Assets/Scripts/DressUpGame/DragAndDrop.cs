@@ -14,17 +14,21 @@ public class DragAndDrop : MonoBehaviour {
         
         if (Input.GetMouseButtonDown(0) && !_isDragging) {
             Collider2D targetObject = Physics2D.OverlapPoint(_mousePosition);
-
-            if (targetObject)
+            
+            if (targetObject && targetObject.GetComponent<Draggable>())
             {
                 _selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
+                _selectedObject.bodyType = RigidbodyType2D.Dynamic;
+                _isDragging = true;
             }
-            
-            _isDragging = true;
         }
         
         if (Input.GetMouseButtonUp(0) && _selectedObject)
         {
+            if (_selectedObject.bodyType == RigidbodyType2D.Kinematic) {
+                _selectedObject.velocity = Vector2.zero;
+                _selectedObject.angularVelocity = 0f;
+            }
             _selectedObject = null;
             _isDragging = false;
         }

@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a29e0bad-6a23-4c4a-8b10-608695ce2eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/eyes.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/eyes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/eyes.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/eyes.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Placeholder Art/shoes 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cutout.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cutout.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cutout.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cutout.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/CreatePolygon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/CreatePolygon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/DrawWithMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/DrawWithMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DressUpGame/DragAndDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DressUpGame/DragAndDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PersistenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PersistenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Packages/EasyTransitions/Scripts/TransitionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PersistenceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@16.0.6/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -95,7 +99,9 @@
       <option name="presentableId" value="Default" />
       <updated>1723889941861</updated>
       <workItem from="1723889944500" duration="19198000" />
-      <workItem from="1723916104358" duration="7052000" />
+      <workItem from="1723916104358" duration="7231000" />
+      <workItem from="1723930084314" duration="3882000" />
+      <workItem from="1723934050437" duration="2936000" />
     </task>
     <servers />
   </component>

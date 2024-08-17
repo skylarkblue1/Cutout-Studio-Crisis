@@ -4,6 +4,7 @@ public class PersistenceManager : MonoBehaviour
 {
     public static PersistenceManager Instance;
     public Mesh cutoutMesh;
+    public Vector2[] polygonPoints;
 
     private void Awake()
     {
