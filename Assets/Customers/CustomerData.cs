@@ -12,12 +12,12 @@ public class CustomerData : MonoBehaviour
     private string eyes;
     private string hair;
 
-    public GameObject celebDatabaseObj; // get this in code
+    public GameObject celebDatabaseObj;
     public CelebDatabase database;
 
-    public Button customerButt; // get this in code
+    public Button customerButt;
 
-    public TMP_Text messageText; // get this in code
+    public TMP_Text messageText;
     private string orderMessage; 
 
     public bool clickedOnCustomer;
@@ -48,14 +48,8 @@ public class CustomerData : MonoBehaviour
 
     void CustomerClicked()
     {
-        if (!clickedOnCustomer)
-        {
-            Debug.Log("Clicked customer");
-            clickedOnCustomer = true;
+        Debug.Log("Clicked customer");
 
-            messageText.text = orderMessage;
-
-            // idk what to put here it feels like I'm missing something but I don't know what aaaaaaaa
-        }
+        messageText.text = orderMessage;
     }
 }
