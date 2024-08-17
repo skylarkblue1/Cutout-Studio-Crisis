@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Cutout : MonoBehaviour {
+    [SerializeField] private GameObject baseSprite;
+    
     private DrawWithMouse _drawing;
     private CreatePolygon _polygon;
     private CheckAccuracy _checkAccuracy;
@@ -17,14 +19,13 @@ public class Cutout : MonoBehaviour {
         _drawing = GetComponent<DrawWithMouse>();
         _polygon = GetComponent<CreatePolygon>();
         _checkAccuracy = GetComponent<CheckAccuracy>();
-        
-        
     }
 
     private void Update() {
         if (_drawing.LineDrawn && !_complete) {
             _polygon.Build();
             _score = _checkAccuracy.CalculateScore();
+            baseSprite.SetActive(false);
             _complete = true;
             SceneManager.LoadScene("DressUpGame", LoadSceneMode.Single);
         }
