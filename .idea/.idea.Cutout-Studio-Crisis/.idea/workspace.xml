@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a29e0bad-6a23-4c4a-8b10-608695ce2eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckAccuracy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckAccuracy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreatePolygon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreatePolygon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawWithMouse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawWithMouse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723889941861</updated>
-      <workItem from="1723889944500" duration="17295000" />
+      <workItem from="1723889944500" duration="19167000" />
     </task>
     <servers />
   </component>
