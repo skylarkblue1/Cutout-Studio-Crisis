@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using UnityEngine;
 
 public class DrawWithMouse : MonoBehaviour {
     [SerializeField] private GameObject line;
     private Coroutine _drawing;
+    private bool _lineDrawn = false;
 
     public List<Vector3> Points { get; private set; } = new();
     
     private void Update() {
-        if (Input.GetMouseButtonDown(0)) StartLine();
-        if (Input.GetMouseButtonUp(0)) FinishLine();
+        if (Input.GetMouseButtonDown(0) && !_lineDrawn) StartLine();
+        if (Input.GetMouseButtonUp(0) && !_lineDrawn) FinishLine();
     }
 
     private void StartLine() {
@@ -23,6 +23,7 @@ public class DrawWithMouse : MonoBehaviour {
 
     private void FinishLine() {
         StopCoroutine(_drawing);
+        _lineDrawn = true;
     }
 
     private IEnumerator DrawLine() {
