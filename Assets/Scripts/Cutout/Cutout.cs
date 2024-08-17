@@ -1,10 +1,13 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Cutout : MonoBehaviour {
+    private static readonly int CutoutComplete = Animator.StringToHash("CutoutComplete");
     [SerializeField] private GameObject baseSprite;
-    [SerializeField] private GameObject cardboard;
-    [SerializeField] private ParticleSystem particles;
+    
+    [SerializeField] private Animator popUpAnimator;
+    [SerializeField] private Animator cardAnimator;
     
     private DrawWithMouse _drawing;
     private CreatePolygon _polygon;
@@ -31,10 +34,17 @@ public class Cutout : MonoBehaviour {
                 _polygon.Build();
                 _score = _checkAccuracy.CalculateScore();
                 baseSprite.SetActive(false);
-                cardboard.SetActive(false);
                 _complete = true;
-                // SceneManager.LoadScene("DressUpGame", LoadSceneMode.Single);
+                StartCoroutine(ExitScene());
             }
         }
+    }
+
+    private IEnumerator ExitScene() {
+        cardAnimator.SetTrigger(CutoutComplete);
+        yield return new WaitForSeconds(0.75f);
+        popUpAnimator.SetTrigger(CutoutComplete);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("DressUpGame", LoadSceneMode.Single);
     }
 }

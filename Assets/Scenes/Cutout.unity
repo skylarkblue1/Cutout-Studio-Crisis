@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 751878082}
   - component: {fileID: 751878081}
   - component: {fileID: 751878080}
+  - component: {fileID: 751878083}
   m_Layer: 0
   m_Name: Cardboard
   m_TagString: Untagged
@@ -920,6 +921,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &751878083
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751878079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad38df125e43d5f4eb06862d9f316146, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &769363412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1107,7 @@ RectTransform:
   m_GameObject: {fileID: 928857043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9722.032}
-  m_LocalScale: {x: 125.27, y: 125.27, z: 125.27}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1726098854}
@@ -10957,6 +10980,14 @@ PrefabInstance:
       propertyPath: baseSprite
       value: 
       objectReference: {fileID: 606648364}
+    - target: {fileID: 888781111202942783, guid: c86ad389929240640b764a9504e8c518, type: 3}
+      propertyPath: cardAnimator
+      value: 
+      objectReference: {fileID: 751878083}
+    - target: {fileID: 888781111202942783, guid: c86ad389929240640b764a9504e8c518, type: 3}
+      propertyPath: popUpAnimator
+      value: 
+      objectReference: {fileID: 928857045}
     - target: {fileID: 1248769703367225295, guid: c86ad389929240640b764a9504e8c518, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
