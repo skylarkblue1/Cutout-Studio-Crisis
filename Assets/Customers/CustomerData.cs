@@ -18,25 +18,34 @@ public class CustomerData : MonoBehaviour
     public Button customerButt;
 
     public TMP_Text messageText;
-    private string orderMessage; 
+    private string orderMessage;
 
-    public bool clickedOnCustomer;
+    public GameObject customerControllerObj;
+    public CustomerController controller;
+
+    public int custNum;
 
     void Awake()
     {
-        // grab a random celeb from CelebReader database
-        // Copy it's data to this prefab
+        // Grab text
         database = GameObject.Find("CelebDatabase").GetComponent<CelebDatabase>();
         messageText = GameObject.Find("OrderMessage").GetComponent<TMP_Text>();
 
+        // Get it's own button
         customerButt = GetComponentInParent<Button>();
 
+        // Get order data
         int index = Random.Range(0, 2);
         firstName = database.items[index].firstName;
         lastName = database.items[index].lastName;
         height = database.items[index].height;
         eyes = database.items[index].eyes;
         hair = database.items[index].hair;
+
+        // Get number for array
+        controller = GameObject.Find("CustomerController").GetComponent<CustomerController>();
+        custNum = controller.customerNumber;
+        Debug.Log(custNum);
 
         orderMessage = "Hello, I would like to order a cutout of " + firstName + " " + lastName;
     }
@@ -51,5 +60,7 @@ public class CustomerData : MonoBehaviour
         Debug.Log("Clicked customer");
 
         messageText.text = orderMessage;
+
+
     }
 }

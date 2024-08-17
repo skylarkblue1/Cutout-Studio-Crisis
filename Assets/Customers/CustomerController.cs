@@ -13,6 +13,8 @@ public class CustomerController : MonoBehaviour
 
     public GameObject canvasOverall;
 
+    public List<GameObject> allTheCustomers = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,8 @@ public class CustomerController : MonoBehaviour
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
             newCustomer.transform.localPosition = vektor;
+            
+            allTheCustomers.Add(newCustomer);
         }
         if (customerNumber == 1)
         {
@@ -50,6 +54,8 @@ public class CustomerController : MonoBehaviour
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
             newCustomer.transform.localPosition = vektor;
+
+            allTheCustomers.Add(newCustomer);
         }
         if (customerNumber == 2)
         {
@@ -58,6 +64,8 @@ public class CustomerController : MonoBehaviour
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
             newCustomer.transform.localPosition = vektor;
+            
+            allTheCustomers.Add(newCustomer);
         }
         if (customerNumber == 3)
         {
@@ -66,6 +74,8 @@ public class CustomerController : MonoBehaviour
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
             newCustomer.transform.localPosition = vektor;
+
+            allTheCustomers.Add(newCustomer);
         }
         if (customerNumber == 4)
         {
@@ -74,7 +84,11 @@ public class CustomerController : MonoBehaviour
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
             newCustomer.transform.localPosition = vektor;
+
+            allTheCustomers.Add(newCustomer);
+            Debug.Log(allTheCustomers);
         }
+        // likely can cut this down heavily by storing the co-ords in an array/list/etc and using the customer number to grab the right pair from the list? since the 3 lines to spawn and set the prefab are the exact same for each.
 
         StartSpawningCustomers();
     }
@@ -98,13 +112,13 @@ public class CustomerController : MonoBehaviour
 }
 
 /*
- * customer spawns in 
+ * customer spawns in /
  * Multiple customers can spawn in at once - max of 5 /
- * 1 order at a time
- * grab a random celeb from the celeb list
+ * grab a random celeb from the celeb list /
  * Player hands over cutout and triggers evaluation screen
  * 
- * Can click on any customer in the queue
+ * Can click on any customer in the queue / 
  * 
  * when a customer leaves, push the ones after that one ahead by 1, and put the one just removed on the end of the queue
+ * 
  */
