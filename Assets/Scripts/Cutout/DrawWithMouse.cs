@@ -6,13 +6,17 @@ using UnityEngine;
 public class DrawWithMouse : MonoBehaviour {
     [SerializeField] private GameObject line;
     private Coroutine _drawing;
-    private bool _lineDrawn = false;
+    public bool LineDrawn { get; private set; } = false;
 
     public List<Vector3> Points { get; private set; } = new();
+
+    private void Start() {
+        if (PersistenceManager.Instance.cutoutMesh != null) LineDrawn = true;
+    }
     
     private void Update() {
-        if (Input.GetMouseButtonDown(0) && !_lineDrawn) StartLine();
-        if (Input.GetMouseButtonUp(0) && !_lineDrawn) FinishLine();
+        if (Input.GetMouseButtonDown(0) && !LineDrawn) StartLine();
+        if (Input.GetMouseButtonUp(0) && !LineDrawn) FinishLine();
     }
 
     private void StartLine() {
@@ -23,7 +27,7 @@ public class DrawWithMouse : MonoBehaviour {
 
     private void FinishLine() {
         StopCoroutine(_drawing);
-        _lineDrawn = true;
+        LineDrawn = true;
     }
 
     private IEnumerator DrawLine() {
