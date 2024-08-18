@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class Popup : MonoBehaviour {
     [SerializeField] List<Sprite> sprites;
 
+
     private void Awake() {
         this.GetComponent<Image>().sprite = sprites[Random.Range(0, sprites.Count)];
     }
