@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a29e0bad-6a23-4c4a-8b10-608695ce2eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cutout.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cutout.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cutout.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cutout.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cutout.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cutout.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/CheckAccuracy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/CheckAccuracy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/CreatePolygon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/CreatePolygon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/Cutout.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutout/DrawWithMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutout/DrawWithMouse.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +19,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Packages/EasyTransitions/Scripts/TransitionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PersistenceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@16.0.6/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -100,7 +95,7 @@
       <workItem from="1723916104358" duration="7231000" />
       <workItem from="1723930084314" duration="3882000" />
       <workItem from="1723934050437" duration="4164000" />
-      <workItem from="1723975557427" duration="542000" />
+      <workItem from="1723975557427" duration="1764000" />
     </task>
     <servers />
   </component>

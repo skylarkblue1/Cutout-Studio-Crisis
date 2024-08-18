@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DrawWithMouse : MonoBehaviour {
     [SerializeField] private GameObject line;
+    [SerializeField] private Timer timer;
+    
     private Coroutine _drawing;
     public bool LineDrawn { get; private set; } = false;
 
@@ -16,7 +18,7 @@ public class DrawWithMouse : MonoBehaviour {
     
     private void Update() {
         if (Input.GetMouseButtonDown(0) && !LineDrawn) StartLine();
-        if (Input.GetMouseButtonUp(0) && !LineDrawn) FinishLine();
+        if ((Input.GetMouseButtonUp(0) && !LineDrawn) || timer.timeRemaining < 0.1f) FinishLine();
     }
 
     private void StartLine() {
