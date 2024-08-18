@@ -77,6 +77,10 @@ public class CustomerData : MonoBehaviour
         //messageController.UpdateOrderMessage(orderMessage);
 
         PersistenceManager.Instance.customerNumber = custNum;
+        foreach (var customer in PersistenceManager.Instance.customerList) {
+            customer.transform.parent = null;
+            DontDestroyOnLoad(customer.gameObject);
+        }
 
         SceneManager.LoadScene(2);
     }

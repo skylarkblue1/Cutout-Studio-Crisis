@@ -30,9 +30,6 @@ public class MeasuringGame : MonoBehaviour
             }
         }
         
-        _customer = ruler.AddComponent<CustomerData>();
-        _customer.height = Random.Range(100f, 250f);
-        
         _markerWidth = marker.GetComponent<RectTransform>().rect.width;
         _rulerWidth = ruler.GetComponent<RectTransform>().rect.width;
         
@@ -57,7 +54,7 @@ public class MeasuringGame : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0)) {
             int score;
-            if (_counter < (_markerPosition.x + (167.54 / 2)) && _counter > (_markerPosition.x - (167.54 / 2))) {
+            if (_counter < (_markerPosition.x + (_markerWidth / 2)) && _counter > (_markerPosition.x - (_markerWidth / 2))) {
                 score = 100;
             }
             else {

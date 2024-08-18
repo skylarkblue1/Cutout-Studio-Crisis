@@ -20,6 +20,12 @@ public class CustomerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PersistenceManager.Instance.customerList != null) {
+            foreach (var customer in PersistenceManager.Instance.customerList) {
+                customer.transform.SetParent(canvasOverall.transform);
+                allTheCustomers.Add(customer.gameObject);
+            }
+        }
         StartSpawningCustomers();
     }
 
