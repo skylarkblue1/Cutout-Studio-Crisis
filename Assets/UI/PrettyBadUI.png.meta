@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PrettyBadUI_0: -2816615304193014082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
