@@ -61,6 +61,6 @@ public class CustomerData : MonoBehaviour
 
         messageText.text = orderMessage;
 
-
+        PersistenceManager.Instance.customerNumber = custNum;
     }
 }

@@ -88,6 +88,8 @@ public class CustomerController : MonoBehaviour
             allTheCustomers.Add(newCustomer);
             Debug.Log(allTheCustomers);
         }
+
+        PersistenceManager.Instance.customerList = allTheCustomers;
         // likely can cut this down heavily by storing the co-ords in an array/list/etc and using the customer number to grab the right pair from the list? since the 3 lines to spawn and set the prefab are the exact same for each.
 
         StartSpawningCustomers();
@@ -115,7 +117,6 @@ public class CustomerController : MonoBehaviour
  * customer spawns in /
  * Multiple customers can spawn in at once - max of 5 /
  * grab a random celeb from the celeb list /
- * Player hands over cutout and triggers evaluation screen
  * 
  * Can click on any customer in the queue / 
  * 
