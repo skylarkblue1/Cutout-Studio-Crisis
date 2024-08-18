@@ -30,7 +30,6 @@ public class CustomerData : MonoBehaviour
     {
         // Grab database
         database = GameObject.Find("CelebDatabase").GetComponent<CelebDatabase>();
-        //messageText = GameObject.Find("OrderMessage").GetComponent<TMP_Text>();
 
         // Get it's own button
         customerButt = GetComponentInParent<Button>();

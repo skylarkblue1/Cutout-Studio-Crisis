@@ -6,7 +6,6 @@ using UnityEngine.U2D;
 
 public class CreatePolygon : MonoBehaviour {
     [SerializeField] private DrawWithMouse drawing;
-    [SerializeField] private Material material;
     [SerializeField] private GameObject polygon;
 
     private PolygonCollider2D _polygonCollider;

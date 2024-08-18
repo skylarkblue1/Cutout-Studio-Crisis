@@ -6,7 +6,7 @@ public class CheckAccuracy : MonoBehaviour {
     [SerializeField] private LineRenderer guideline;
     [SerializeField] private LineRenderer drawing;
 
-    private int _score;
+    private float _score;
     
     public int CalculateScore() {
         _score = 0;
@@ -23,8 +23,10 @@ public class CheckAccuracy : MonoBehaviour {
             if (drawingPositionsList.Any(p => Vector2.Distance(p, point) <= 0.2f)) _score++;
         }
         
+        _score = (_score / maxScore) * 100;
+        
         print(@$"{_score}: {maxScore}");
-        _score = (_score / maxScore) * 50;
-        return _score;
+        
+        return (int) _score;
     }
 }

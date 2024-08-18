@@ -11,6 +11,8 @@ public class PersistenceManager : MonoBehaviour
     public List<GameObject> customerList;
 
     public int customerNumber;
+    public int score;
+    public int ordersComplete;
 
     private void Awake()
     {
