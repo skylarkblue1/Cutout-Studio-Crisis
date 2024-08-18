@@ -6,7 +6,9 @@ using UnityEngine;
 public class DrawWithMouse : MonoBehaviour {
     [SerializeField] private GameObject line;
     [SerializeField] private Timer timer;
-    
+
+    [SerializeField] private AudioSource cuttingSound;
+
     private Coroutine _drawing;
     public bool LineDrawn { get; private set; } = false;
 
@@ -25,11 +27,13 @@ public class DrawWithMouse : MonoBehaviour {
         if (_drawing != null) StopCoroutine(_drawing);
         if (Points.Any()) Points.Clear();
         _drawing = StartCoroutine(DrawLine());
+        cuttingSound.Play(0);
     }
 
     private void FinishLine() {
         StopCoroutine(_drawing);
         LineDrawn = true;
+        cuttingSound.Stop();
     }
 
     private IEnumerator DrawLine() {
