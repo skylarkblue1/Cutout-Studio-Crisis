@@ -5,20 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
+
+    public GameObject tutorialPopup;
+
+    public GameObject creditsPopup;
+
     public void OnPlayButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2); //Make sure this goes to the game's scene
     }
+
 
     public void OnTutorialButton()
     {
-        // Show tutorial images slideshow
+        tutorialPopup.SetActive(true);
     }
+    public void OnTutorialClose()
+    {
+        tutorialPopup.SetActive(false);
+    }
+
 
     public void OnCreditsButton()
     {
-        // Show credits image
+        creditsPopup.SetActive(true);
     }
+
+    public void OnCreditsClose()
+    {
+        creditsPopup.SetActive(false);
+    }
+
 
     public void OnQuitButton()
     {
