@@ -40,6 +40,7 @@ public class Cutout : MonoBehaviour {
                 reaction.React(_score);
                 baseSprite.SetActive(false);
                 _complete = true;
+                PersistenceManager.Instance.score += _score;
                 StartCoroutine(ExitScene());
             }
         }

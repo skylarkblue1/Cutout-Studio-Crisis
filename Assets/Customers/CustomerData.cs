@@ -6,11 +6,11 @@ using TMPro;
 
 public class CustomerData : MonoBehaviour
 {
-    private string firstName;
-    private string lastName;
-    private string height;
-    private string eyes;
-    private string hair;
+    public string firstName;
+    public string lastName;
+    public float height;
+    public string eyes;
+    public string hair;
 
     public GameObject celebDatabaseObj;
     public CelebDatabase database;
@@ -18,7 +18,7 @@ public class CustomerData : MonoBehaviour
     public Button customerButt;
 
     public TMP_Text messageText;
-    private string orderMessage;
+    public string orderMessage;
 
     public GameObject customerControllerObj;
     public CustomerController controller;

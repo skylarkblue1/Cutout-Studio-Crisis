@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bad: {fileID: -2816615304193014082, guid: 4962d39be98149348ac7cc71e16e5c90, type: 3}
-  good: {fileID: -7214836668822870597, guid: ce54295c51cc8bc41bf90cdb2d3f1f6d, type: 3}
+  good: {fileID: -1365603227317232331, guid: ce54295c51cc8bc41bf90cdb2d3f1f6d, type: 3}
 --- !u!95 &5625845986481189420
 Animator:
   serializedVersion: 7
