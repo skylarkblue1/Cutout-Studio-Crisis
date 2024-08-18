@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NiceUI_0: -7214836668822870597
+      NiceUI_1: -1365603227317232331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
