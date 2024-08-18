@@ -36,8 +36,10 @@ public class ComputerGame : MonoBehaviour {
     private float ymax = -108f;
 
     private void Start() {
-        print(PersistenceManager.Instance.customerList);
-
+        if (PersistenceManager.Instance.cutoutMesh) {
+            PersistenceManager.Instance.cutoutMesh = null;
+        }
+        
         foreach (GameObject cust in PersistenceManager.Instance.customerList) {
             if (cust.GetComponent<CustomerData>().custNum == PersistenceManager.Instance.customerNumber) {
                 _customer = cust.GetComponent<CustomerData>();
