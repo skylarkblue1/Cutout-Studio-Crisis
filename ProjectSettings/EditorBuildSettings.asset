@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TestingCustomers.unity
     guid: 911ec490eba2a1a44a0b3f38dd2c1c00
   - enabled: 1
+    path: Assets/Scenes/ComputerGame.unity
+    guid: eb33c024aab590343bbdcc2f811e31ee
+  - enabled: 1
+    path: Assets/Scenes/MeasuringGame.unity
+    guid: 6f23eeca7a4a5e64397bda40e2aa0718
+  - enabled: 1
     path: Assets/Scenes/Cutout.unity
     guid: 6ca221152460c88458c07c7a17802a6e
   - enabled: 1
