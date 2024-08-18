@@ -16,6 +16,6 @@ public class Reaction : MonoBehaviour {
 
     public void React(int score) {
         _sr.sprite = score > 50 ? good : bad;
-        stampSound.Play(0);
+        // stampSound.Play(0);
     }
 }

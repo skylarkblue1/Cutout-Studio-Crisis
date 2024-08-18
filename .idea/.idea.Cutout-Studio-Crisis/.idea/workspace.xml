@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a29e0bad-6a23-4c4a-8b10-608695ce2eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Customers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Customers/CustomerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Customers/CustomerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Customers/CustomerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ComputerGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ComputerGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ComputerGame/ComputerGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ComputerGame/ComputerGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DressUpGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DressUpGame/DragAndDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DressUpGame/DragAndDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Reaction/Reaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Reaction/Reaction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
