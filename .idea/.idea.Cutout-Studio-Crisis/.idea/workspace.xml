@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a29e0bad-6a23-4c4a-8b10-608695ce2eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutout-Studio-Crisis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MeasuringGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MeasuringGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ComputerGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ComputerGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeasuringGame/MeasuringGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeasuringGame/MeasuringGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ComputerUI_Foreground.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ComputerUI_Foreground.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ComputerUI_Popup1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ComputerUI_Popup1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ComputerUI_Popup2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ComputerUI_Popup2.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ComputerGame/ComputerGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ComputerGame/Popup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeasuringGame/MeasuringGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PersistenceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,6 +101,7 @@
       <workItem from="1723930084314" duration="3882000" />
       <workItem from="1723934050437" duration="4164000" />
       <workItem from="1723975557427" duration="1764000" />
+      <workItem from="1723987831253" duration="4886000" />
     </task>
     <servers />
   </component>
