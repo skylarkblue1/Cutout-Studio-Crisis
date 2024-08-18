@@ -26,6 +26,8 @@ public class CustomerData : MonoBehaviour
 
     public int custNum;
 
+    public Sprite currentSprite;
+
     void Awake()
     {
         // Grab database
@@ -53,12 +55,13 @@ public class CustomerData : MonoBehaviour
         // Grab sprite array from SpriteManager and pull a random sprite and set it as this object's current sprite
         // make default sprite blank so there's no flashing
         spriteManager = GameObject.Find("SpriteManager").GetComponent<SpriteManager>();
-        
+
         int spriteNum = Random.Range(0, 4);
-        GetComponent<Image>().sprite = spriteManager.customerSprites[spriteNum];
+        currentSprite = spriteManager.customerSprites[spriteNum];
+        GetComponent<Image>().sprite = currentSprite;
 
        // Construct the order message that'll be shown
-       orderMessage = "Hello, I would like to order a cutout of " + firstName + " " + lastName;
+        orderMessage = "Hello, I would like to order a cutout of " + firstName + " " + lastName;
     }
 
     void FixedUpdate()
