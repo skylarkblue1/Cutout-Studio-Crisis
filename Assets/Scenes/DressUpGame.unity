@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 338317222}
   - component: {fileID: 338317223}
   - component: {fileID: 338317224}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 358353144}
   - component: {fileID: 358353143}
   - component: {fileID: 358353145}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 383387659}
   - component: {fileID: 383387658}
   - component: {fileID: 383387660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 435054086}
   - component: {fileID: 435054085}
   - component: {fileID: 435054087}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 513857363}
   - component: {fileID: 513857362}
   - component: {fileID: 513857364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519671233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1609,7 @@ GameObject:
   - component: {fileID: 813516601}
   - component: {fileID: 813516602}
   - component: {fileID: 813516603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1783,7 +1783,7 @@ GameObject:
   - component: {fileID: 883065279}
   - component: {fileID: 883065278}
   - component: {fileID: 883065280}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 957306982}
   - component: {fileID: 957306983}
   - component: {fileID: 957306984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   - component: {fileID: 965184695}
   - component: {fileID: 965184694}
   - component: {fileID: 965184696}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2313,7 +2313,7 @@ GameObject:
   - component: {fileID: 1025590714}
   - component: {fileID: 1025590715}
   - component: {fileID: 1025590716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2487,7 +2487,7 @@ GameObject:
   - component: {fileID: 1155999392}
   - component: {fileID: 1155999393}
   - component: {fileID: 1155999394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2661,7 +2661,7 @@ GameObject:
   - component: {fileID: 1180340409}
   - component: {fileID: 1180340408}
   - component: {fileID: 1180340410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2835,7 +2835,7 @@ GameObject:
   - component: {fileID: 1218306182}
   - component: {fileID: 1218306181}
   - component: {fileID: 1218306183}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3013,7 +3013,7 @@ GameObject:
   - component: {fileID: 1256295781}
   - component: {fileID: 1256295780}
   - component: {fileID: 1256295782}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3191,7 +3191,7 @@ GameObject:
   - component: {fileID: 1286200062}
   - component: {fileID: 1286200061}
   - component: {fileID: 1286200063}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,7 +3369,7 @@ GameObject:
   - component: {fileID: 1316228150}
   - component: {fileID: 1316228149}
   - component: {fileID: 1316228151}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3547,7 +3547,7 @@ GameObject:
   - component: {fileID: 1397566042}
   - component: {fileID: 1397566041}
   - component: {fileID: 1397566043}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3792,6 +3792,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4826447928681293523, guid: c86ad389929240640b764a9504e8c518, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: aace826eb7560f744b642ff704c267d7, type: 2}
     - target: {fileID: 7992188059227899633, guid: c86ad389929240640b764a9504e8c518, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -3832,7 +3836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540243762}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4015,7 +4019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693194438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tops
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4051,7 +4055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1706741739}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Shoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4211,7 +4215,7 @@ GameObject:
   - component: {fileID: 1990325208}
   - component: {fileID: 1990325209}
   - component: {fileID: 1990325210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4385,7 +4389,7 @@ GameObject:
   - component: {fileID: 2031603276}
   - component: {fileID: 2031603275}
   - component: {fileID: 2031603277}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4713,7 +4717,7 @@ GameObject:
   - component: {fileID: 2087629484}
   - component: {fileID: 2087629483}
   - component: {fileID: 2087629485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4887,7 +4891,7 @@ GameObject:
   - component: {fileID: 2087725009}
   - component: {fileID: 2087725008}
   - component: {fileID: 2087725010}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bottoms1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

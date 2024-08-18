@@ -9,6 +9,8 @@ public class Cutout : MonoBehaviour {
     [SerializeField] private Animator popUpAnimator;
     [SerializeField] private Animator cardAnimator;
     
+    [SerializeField] private Reaction reaction;
+    
     private DrawWithMouse _drawing;
     private CreatePolygon _polygon;
     private CheckAccuracy _checkAccuracy;
@@ -33,6 +35,7 @@ public class Cutout : MonoBehaviour {
             if (_drawing.LineDrawn) {
                 _polygon.Build();
                 _score = _checkAccuracy.CalculateScore();
+                reaction.React(_score);
                 baseSprite.SetActive(false);
                 _complete = true;
                 StartCoroutine(ExitScene());
