@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class ComputerGame : MonoBehaviour
 {
@@ -12,8 +13,9 @@ public class ComputerGame : MonoBehaviour
     [SerializeField] private Timer timer;
     
     [SerializeField] private Canvas canvas;
+    [SerializeField] private Button done;
     
-    [SerializeField] private Text request;
+    [SerializeField] private TMP_Text request;
     
     private CustomerData _customer;
 
@@ -31,6 +33,7 @@ public class ComputerGame : MonoBehaviour
         
         customerImage.sprite = _customer.GetComponent<Image>().sprite;
         request.GetComponent<Text>().text = $"I would like a cutout of {_customer.firstName} {_customer.lastName}";
+        
         StartCoroutine(ShowPopup());
     }
 
