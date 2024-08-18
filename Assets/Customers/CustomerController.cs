@@ -15,16 +15,12 @@ public class CustomerController : MonoBehaviour
 
     public List<GameObject> allTheCustomers = new List<GameObject>();
 
+    public AudioSource customerSpawnSound;
+
     // Start is called before the first frame update
     void Start()
     {
         StartSpawningCustomers();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void StartSpawningCustomers()
@@ -34,7 +30,7 @@ public class CustomerController : MonoBehaviour
 
     void SpawnCustomer()
     {
-        // Also here would be where to add the sound effect trigger
+        customerSpawnSound.Play(0);
 
         if (customerNumber == 0)
         {
