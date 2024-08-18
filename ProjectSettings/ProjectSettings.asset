@@ -681,11 +681,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 391519d8-5eef-437c-8c23-73bc131595bd
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Cutout-Studio-Crisis 2024-08-17_22-26-57
+  organizationId: robeecodes
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
