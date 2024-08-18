@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour
 
     public void OnPlayButton()
     {
-        SceneManager.LoadScene(2); //Make sure this goes to the game's scene
+        SceneManager.LoadScene(1); //Make sure this goes to the overall shop view scene
     }
 
 

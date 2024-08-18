@@ -1802,10 +1802,29 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits~
+  m_text: '<size=+4><b><u>Credits!!</u></b></size>
 
 
-    put ''em here'
+    Robin King
+
+    Programmer/Graphic
+    Designer
+
+
+    Gus James
+
+    Composer/Sound Designer
+
+
+    Alex (snail-legs)
+
+    Artist
+
+
+    Sky
+    (skylarkblue1)
+
+    Programmer/Designer'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 160669df999bf4f47915a0dfed63f249, type: 2}
   m_sharedMaterial: {fileID: -5762841301433664125, guid: 160669df999bf4f47915a0dfed63f249, type: 2}
@@ -1832,8 +1851,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1950,20 +1969,21 @@ MonoBehaviour:
 
     Next use
     the computer to search up the person, you need to find their height, eye colour
-    and hair colour!
+    and hair colour! But watch out for the pop-ups blocking your screen!
 
 
-    After that, move on over to the cutting board. Cut out
-    the cut-out to the right measurements!
+    After
+    that, move on over to the cutting board. Cut out the cut-out to the right measurements!
 
 
-    Now for the painting! Colour in
-    the hair and eyes to the right colours so the cut-out looks like who it''s meant
-    to, and dress them up how you want!
+    Now
+    for the painting! Colour in the hair and eyes to the right colours so the cut-out
+    looks like who it''s meant to, and dress them up how you want!
 
 
-    Get as many elements accurate as you
-    can to the order to score the highest points over the x minute timer!
+    Get as many
+    elements accurate as you can to the order to score the highest points over the
+    5 minute timer!
 
 '
   m_isRightToLeft: 0

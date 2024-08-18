@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CustomerData : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class CustomerData : MonoBehaviour
         customerButt = GetComponentInParent<Button>();
 
         // Get order data
-        int index = Random.Range(0, 4);
+        int index = Random.Range(0, 6);
         firstName = database.items[index].firstName;
         lastName = database.items[index].lastName;
         height = database.items[index].height;
@@ -73,8 +74,10 @@ public class CustomerData : MonoBehaviour
     {
         Debug.Log("Clicked customer");
 
-        messageController.UpdateOrderMessage(orderMessage);
+        //messageController.UpdateOrderMessage(orderMessage);
 
         PersistenceManager.Instance.customerNumber = custNum;
+
+        SceneManager.LoadScene(2);
     }
 }

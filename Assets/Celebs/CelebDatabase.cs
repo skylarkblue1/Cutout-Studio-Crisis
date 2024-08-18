@@ -7,7 +7,7 @@ using UnityEngine.Assertions;
 
 public class CelebDatabase : MonoBehaviour
 {
-    public Celebs[] items = new Celebs[2];
+    public Celebs[] items = new Celebs[7];
 }
 
 [Serializable]

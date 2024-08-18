@@ -14,6 +14,9 @@ public class OrderMessageController : MonoBehaviour
     public void UpdateOrderMessage(string orderMessage)
     {
         messageText.text = orderMessage;
-        messageObj.SetActive(true);
+        //if (messageObj.activeSelf)
+        //    messageObj.SetActive(false);
+        //else
+        //    messageObj.SetActive(true);
     }
 }
