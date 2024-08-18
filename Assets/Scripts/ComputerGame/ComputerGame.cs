@@ -5,19 +5,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using TMPro;
+using UnityEngine.SceneManagement;
 
-public class ComputerGame : MonoBehaviour
-{
+public class ComputerGame : MonoBehaviour {
     [SerializeField] private GameObject popup;
     [SerializeField] private Image customerImage;
     [SerializeField] private Timer timer;
-    
+
     [SerializeField] private Canvas canvas;
     [SerializeField] private Button done;
-    
+
+    [SerializeField] private GameObject firstName;
+    [SerializeField] private GameObject lastName;
+
     [SerializeField] private TMP_Text request;
-    
+
     private CustomerData _customer;
+
+    private Coroutine _showPopup;
+
+    private bool _done;
+
+    private int _score;
 
     private float xmin = 5.047315f;
     private float xmax = 668f;
@@ -25,32 +34,57 @@ public class ComputerGame : MonoBehaviour
     private float ymax = -108f;
 
     private void Start() {
+        print(PersistenceManager.Instance.customerList);
+
         foreach (GameObject cust in PersistenceManager.Instance.customerList) {
             if (cust.GetComponent<CustomerData>().custNum == PersistenceManager.Instance.customerNumber) {
                 _customer = cust.GetComponent<CustomerData>();
             }
         }
-        
+
         customerImage.sprite = _customer.GetComponent<Image>().sprite;
-        request.GetComponent<Text>().text = $"I would like a cutout of {_customer.firstName} {_customer.lastName}";
-        
-        StartCoroutine(ShowPopup());
+        request.text = $"I would like a cutout of {_customer.firstName} {_customer.lastName}";
+
+        _showPopup = StartCoroutine(ShowPopup());
     }
 
     private void Update() {
-        
+        done.onClick.AddListener(() => {
+            StopCoroutine(_showPopup);
+            _done = true;
+        });
+        if (timer.timeRemaining < 0.1f) {
+            StopCoroutine(_showPopup);
+            _done = true;
+        }
+
+        if (_done) {
+            // Dropdown firstDropdown = firstName.GetComponent<Dropdown>();
+            // Dropdown lastDropdown = lastName.GetComponent<Dropdown>();
+            // if (firstDropdown.options[firstDropdown.value].text == _customer.firstName) {
+            //     _score += 50;
+            // }
+            //
+            // if (lastDropdown.options[lastDropdown.value].text == _customer.lastName) {
+            //     _score += 50;
+            // }
+            
+            PersistenceManager.Instance.score += _score;
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     private IEnumerator ShowPopup() {
         while (true) {
-            float delay = Random.Range(0.5f * 1 / (PersistenceManager.Instance.ordersComplete + 1), 3.0f * 1 / (PersistenceManager.Instance.ordersComplete + 1));
-        
+            float delay = Random.Range(0.5f * 1 / (PersistenceManager.Instance.ordersComplete + 1),
+                3.0f * 1 / (PersistenceManager.Instance.ordersComplete + 1));
+
             Vector2 position = new Vector2(Random.Range(xmin, xmax), Random.Range(ymin, ymax));
-            
+
             yield return new WaitForSeconds(delay);
             Instantiate(popup, canvas.transform, false);
             popup.transform.localPosition = position;
         }
     }
-
 }
