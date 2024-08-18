@@ -39,7 +39,7 @@ public class CustomerController : MonoBehaviour
 
         if (customerNumber == 0)
         {
-            var vektor = new Vector2(-713, 313);
+            var vektor = new Vector2(271, -213);
 
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
@@ -49,7 +49,7 @@ public class CustomerController : MonoBehaviour
         }
         if (customerNumber == 1)
         {
-            var vektor = new Vector2(-506, 112);
+            var vektor = new Vector2(102, -172);
 
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
@@ -59,7 +59,7 @@ public class CustomerController : MonoBehaviour
         }
         if (customerNumber == 2)
         {
-            var vektor = new Vector2(-184, 253);
+            var vektor = new Vector2(-67, -228);
 
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
@@ -69,7 +69,7 @@ public class CustomerController : MonoBehaviour
         }
         if (customerNumber == 3)
         {
-            var vektor = new Vector2(155, 171);
+            var vektor = new Vector2(-235, -187);
 
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
@@ -79,7 +79,7 @@ public class CustomerController : MonoBehaviour
         }
         if (customerNumber == 4)
         {
-            var vektor = new Vector2(559, 294);
+            var vektor = new Vector2(-372, -337);
 
             var newCustomer = Instantiate(custPrefab, vektor, Quaternion.identity);
             newCustomer.transform.SetParent(canvasOverall.transform);
