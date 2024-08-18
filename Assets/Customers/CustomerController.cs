@@ -34,7 +34,6 @@ public class CustomerController : MonoBehaviour
 
     void SpawnCustomer()
     {
-        // Spawn positions for customers. Change coords to final when scene is finished
         // Also here would be where to add the sound effect trigger
 
         if (customerNumber == 0)
@@ -86,7 +85,6 @@ public class CustomerController : MonoBehaviour
             newCustomer.transform.localPosition = vektor;
 
             allTheCustomers.Add(newCustomer);
-            Debug.Log(allTheCustomers);
         }
 
         PersistenceManager.Instance.customerList = allTheCustomers;
