@@ -24,6 +24,8 @@ public class ComputerGame : MonoBehaviour {
 
     private Coroutine _showPopup;
 
+    [SerializeField] AudioSource popupOpen;
+
     private bool _done;
 
     private int _score;
@@ -85,6 +87,8 @@ public class ComputerGame : MonoBehaviour {
             yield return new WaitForSeconds(delay);
             Instantiate(popup, canvas.transform, false);
             popup.transform.localPosition = position;
+
+            popupOpen.Play(0);
         }
     }
 }
