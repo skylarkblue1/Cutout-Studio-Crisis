@@ -15,7 +15,7 @@ public class Celebs
 {
     public String firstName;
     public String lastName;
-    public String height;
+    public float height;
     public String eyes;
     public String hair;
 }

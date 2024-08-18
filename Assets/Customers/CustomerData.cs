@@ -6,36 +6,37 @@ using TMPro;
 
 public class CustomerData : MonoBehaviour
 {
-    private string firstName;
-    private string lastName;
-    private string height;
-    private string eyes;
-    private string hair;
+    public string firstName;
+    public string lastName;
+    public float height;
+    public string eyes;
+    public string hair;
 
-    public GameObject celebDatabaseObj;
     public CelebDatabase database;
 
     public Button customerButt;
 
-    public TMP_Text messageText;
-    private string orderMessage;
+    public string orderMessage;
 
-    public GameObject customerControllerObj;
     public CustomerController controller;
+
+    public OrderMessageController messageController;
+
+    public SpriteManager spriteManager;
 
     public int custNum;
 
     void Awake()
     {
-        // Grab text
+        // Grab database
         database = GameObject.Find("CelebDatabase").GetComponent<CelebDatabase>();
-        messageText = GameObject.Find("OrderMessage").GetComponent<TMP_Text>();
+        //messageText = GameObject.Find("OrderMessage").GetComponent<TMP_Text>();
 
         // Get it's own button
         customerButt = GetComponentInParent<Button>();
 
         // Get order data
-        int index = Random.Range(0, 2);
+        int index = Random.Range(0, 4);
         firstName = database.items[index].firstName;
         lastName = database.items[index].lastName;
         height = database.items[index].height;
@@ -47,10 +48,21 @@ public class CustomerData : MonoBehaviour
         custNum = controller.customerNumber;
         Debug.Log(custNum);
 
-        orderMessage = "Hello, I would like to order a cutout of " + firstName + " " + lastName;
+        // Get OrderMessageController to display the correct order messages properly
+        messageController = GameObject.Find("MessageController").GetComponent<OrderMessageController>();
+
+        // Grab sprite array from SpriteManager and pull a random sprite and set it as this object's current sprite
+        // make default sprite blank so there's no flashing
+        spriteManager = GameObject.Find("SpriteManager").GetComponent<SpriteManager>();
+        
+        int spriteNum = Random.Range(0, 4);
+        GetComponent<Image>().sprite = spriteManager.customerSprites[spriteNum];
+
+       // Construct the order message that'll be shown
+       orderMessage = "Hello, I would like to order a cutout of " + firstName + " " + lastName;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         customerButt.onClick.AddListener(CustomerClicked);
     }
@@ -59,7 +71,7 @@ public class CustomerData : MonoBehaviour
     {
         Debug.Log("Clicked customer");
 
-        messageText.text = orderMessage;
+        messageController.UpdateOrderMessage(orderMessage);
 
         PersistenceManager.Instance.customerNumber = custNum;
     }
