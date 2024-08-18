@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9cd46de7943e6a042b3dd2a7e309b96a
+guid: 2a317e0b41852cf44ad70db925dc1515
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3855002181538486612
-    second: customer 3_0
+      213: -5787510280797770764
+    second: ComputerUI_Popup2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: customer 3_0
+      name: ComputerUI_Popup2_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 10
-        width: 172
-        height: 227
+        x: 0
+        y: 0
+        width: 498
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca6ea09c0f7408ac0800000000000000
-      internalID: -3855002181538486612
+      spriteID: 4fba02b2012aeafa0800000000000000
+      internalID: -5787510280797770764
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      customer 3_0: -3855002181538486612
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
