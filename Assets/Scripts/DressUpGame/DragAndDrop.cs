@@ -10,6 +10,8 @@ public class DragAndDrop : MonoBehaviour {
     private Vector3 _offset;
 
     private bool _complete;
+
+    [SerializeField] private Timer timer;
     
     private bool _isDragging;
     private void Update() {
@@ -36,7 +38,12 @@ public class DragAndDrop : MonoBehaviour {
             _isDragging = false;
         }
 
+        if (timer.timeRemaining < 0.1f) {
+            _complete = true;
+        }
+
         if (_complete) {
+            PersistenceManager.Instance.ordersComplete++;
             SceneManager.LoadScene("TestingCustomers", LoadSceneMode.Single);
         }
     }

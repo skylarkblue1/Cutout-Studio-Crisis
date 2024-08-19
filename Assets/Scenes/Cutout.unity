@@ -11217,6 +11217,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1309977417}
     - target: {fileID: 368903421234760590, guid: c86ad389929240640b764a9504e8c518, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 331989528}
+    - target: {fileID: 368903421234760590, guid: c86ad389929240640b764a9504e8c518, type: 3}
       propertyPath: cuttingSound
       value: 
       objectReference: {fileID: 232039587}
