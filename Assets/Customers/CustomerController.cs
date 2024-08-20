@@ -95,7 +95,7 @@ public class CustomerController : MonoBehaviour
 
     IEnumerator waiter()
     {
-        int wait_time = Random.Range(2, 4);
+        int wait_time = Random.Range(4, 6);
         yield return new WaitForSeconds(wait_time);
         print("I waited for " + wait_time + "sec. Trying to spawn a customer");
         if (PersistenceManager.Instance.customerList.Count <= 4)
