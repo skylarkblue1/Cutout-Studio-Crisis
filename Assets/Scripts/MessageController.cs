@@ -31,8 +31,6 @@ public class MessageController : MonoBehaviour
 
         if (PersistenceManager.Instance.timer <= 0)
         {
-            PersistenceManager.Instance.timer = 0;
-
             endText.text = "Congratulations!\nYou've completed the day and completed " + PersistenceManager.Instance.ordersComplete + " orders!\n\nYour Final Score: " + PersistenceManager.Instance.score;
             endScreen.SetActive(true);
 
