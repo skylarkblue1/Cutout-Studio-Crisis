@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class CustomerController : MonoBehaviour
 {
-    // Add customer sprites here to enable and disable/play with in the queue
-    // public List<GameObject> customerSprites = new List<GameObject>();
     public int customerNumber = 0;
 
     public GameObject custPrefab;
@@ -38,7 +36,7 @@ public class CustomerController : MonoBehaviour
     {
         customerSpawnSound.Play(0);
 
-        if (customerNumber == 0)
+        if (PersistenceManager.Instance.customerList.Count == 0)
         {
             var vektor = new Vector2(271, -213);
 
@@ -48,7 +46,7 @@ public class CustomerController : MonoBehaviour
             
             allTheCustomers.Add(newCustomer);
         }
-        if (customerNumber == 1)
+        else if (PersistenceManager.Instance.customerList.Count == 1)
         {
             var vektor = new Vector2(102, -172);
 
@@ -58,7 +56,7 @@ public class CustomerController : MonoBehaviour
 
             allTheCustomers.Add(newCustomer);
         }
-        if (customerNumber == 2)
+        else if (PersistenceManager.Instance.customerList.Count == 2)
         {
             var vektor = new Vector2(-67, -228);
 
@@ -68,7 +66,7 @@ public class CustomerController : MonoBehaviour
             
             allTheCustomers.Add(newCustomer);
         }
-        if (customerNumber == 3)
+        else if (PersistenceManager.Instance.customerList.Count == 3)
         {
             var vektor = new Vector2(-235, -187);
 
@@ -78,7 +76,7 @@ public class CustomerController : MonoBehaviour
 
             allTheCustomers.Add(newCustomer);
         }
-        if (customerNumber == 4)
+        else if (PersistenceManager.Instance.customerList.Count == 4)
         {
             var vektor = new Vector2(-372, -337);
 
@@ -97,10 +95,10 @@ public class CustomerController : MonoBehaviour
 
     IEnumerator waiter()
     {
-        int wait_time = Random.Range(1, 2);
+        int wait_time = Random.Range(4, 6);
         yield return new WaitForSeconds(wait_time);
         print("I waited for " + wait_time + "sec. Trying to spawn a customer");
-        if (customerNumber <= 4)
+        if (PersistenceManager.Instance.customerList.Count <= 4)
         {
             SpawnCustomer();
             customerNumber++;

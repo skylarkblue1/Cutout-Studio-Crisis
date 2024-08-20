@@ -15,8 +15,8 @@ public class ComputerGame : MonoBehaviour {
     [SerializeField] private Canvas canvas;
     [SerializeField] private Button done;
 
-    [SerializeField] private GameObject firstName;
-    [SerializeField] private GameObject lastName;
+    [SerializeField] private TMPro.TMP_Dropdown firstName;
+    [SerializeField] private TMPro.TMP_Dropdown lastName;
 
     [SerializeField] private TMP_Text request;
 
@@ -63,15 +63,11 @@ public class ComputerGame : MonoBehaviour {
         }
 
         if (_done) {
-            // Dropdown firstDropdown = firstName.GetComponent<Dropdown>();
-            // Dropdown lastDropdown = lastName.GetComponent<Dropdown>();
-            // if (firstDropdown.options[firstDropdown.value].text == _customer.firstName) {
-            //     _score += 50;
-            // }
-            //
-            // if (lastDropdown.options[lastDropdown.value].text == _customer.lastName) {
-            //     _score += 50;
-            // }
+            if (firstName.options[firstName.value].text == _customer.firstName)
+                _score += 50;
+            
+            if (lastName.options[lastName.value].text == _customer.lastName)
+                _score += 50;
             
             PersistenceManager.Instance.score += _score;
             

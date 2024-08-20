@@ -2541,6 +2541,9 @@ MonoBehaviour:
     - m_Text: Buttercup
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: Ariana
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2593,6 +2596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168255447}
   - component: {fileID: 1168255446}
+  - component: {fileID: 1168255448}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -2628,6 +2632,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168255448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168255445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926145ca89599c3429578a4264c7d270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 300
 --- !u!1 &1378397766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,6 +3524,9 @@ MonoBehaviour:
     - m_Text: Ditch
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: "Peque\xF1o"
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4111,8 +4131,8 @@ MonoBehaviour:
   timer: {fileID: 1168255446}
   canvas: {fileID: 1378397769}
   done: {fileID: 1053440318}
-  firstName: {fileID: 1143292084}
-  lastName: {fileID: 1770693963}
+  firstName: {fileID: 1143292086}
+  lastName: {fileID: 1770693965}
   request: {fileID: 1896581822}
   popupOpen: {fileID: 989193410}
 --- !u!114 &2092114733
@@ -4208,6 +4228,7 @@ MonoBehaviour:
   customerNumber: 0
   score: 0
   ordersComplete: 0
+  timer: 0
 --- !u!4 &2144816256
 Transform:
   m_ObjectHideFlags: 0

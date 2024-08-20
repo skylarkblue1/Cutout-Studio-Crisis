@@ -21,7 +21,7 @@ public class CustomerData : MonoBehaviour
 
     public CustomerController controller;
 
-    public OrderMessageController messageController;
+    // public MessageController messageController;
 
     public SpriteManager spriteManager;
 
@@ -51,7 +51,7 @@ public class CustomerData : MonoBehaviour
         Debug.Log(custNum);
 
         // Get OrderMessageController to display the correct order messages properly
-        messageController = GameObject.Find("MessageController").GetComponent<OrderMessageController>();
+        // messageController = GameObject.Find("MessageController").GetComponent<MessageController>();
 
         // Grab sprite array from SpriteManager and pull a random sprite and set it as this object's current sprite
         // make default sprite blank so there's no flashing
