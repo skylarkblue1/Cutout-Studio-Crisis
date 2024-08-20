@@ -2298,7 +2298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.074974, y: 0.0000011026}
+  m_AnchoredPosition: {x: 0.074974, y: 0.4}
   m_SizeDelta: {x: 307.21, y: 206.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839875839
@@ -2321,32 +2321,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to your new cardboard cut-out studio!
+  m_text: 'Click on customers to take their orders - take note of what celebrity
+    they want!
 
+    
 
-    Click on customers
-    to take their orders - take note of what celebrity they want!
+    Next use the computer to search up the person, you need
+    to find their height, eye colour and hair colour! Watch out for those pesky popups!
 
-
-    Next use
-    the computer to search up the person, you need to find their height, eye colour
-    and hair colour! But watch out for the pop-ups blocking your screen!
-
+    
 
     After
     that, move on over to the cutting board. Cut out the cut-out to the right measurements!
 
+    
 
-    Now
-    for the painting! Colour in the hair and eyes to the right colours so the cut-out
-    looks like who it''s meant to, and dress them up how you want!
+    Then
+    you need to cut out the outline out of the cardboard, make sure to follow the
+    outline as quickly as you can, in a single line!
 
+    
 
-    Get as many
-    elements accurate as you can to the order to score the highest points over the
-    3 minute timer!
+    Now for the dessing
+    up! Try and choose the right hair and clothes for the person you''re trying to
+    create!
 
-'
+    
+
+    Get as many elements accurate as you can to the order to
+    score the highest points over the 3 minute timer! Be careful though as hazards
+    seem to appear quicker with the more orders you complete!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 160669df999bf4f47915a0dfed63f249, type: 2}
   m_sharedMaterial: {fileID: -5762841301433664125, guid: 160669df999bf4f47915a0dfed63f249, type: 2}
@@ -2411,7 +2415,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.5373535, y: -3.253765, z: -0.5089607, w: -2.798174}
+  m_margin: {x: 10.216919, y: -3.253765, z: 9.7332115, w: -2.798174}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
