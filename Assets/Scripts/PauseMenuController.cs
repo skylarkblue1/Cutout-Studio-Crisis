@@ -9,11 +9,19 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnRestartButton()
     {
+        PersistenceManager.Instance.timer = 0;
+        PersistenceManager.Instance.ordersComplete = 0;
+        PersistenceManager.Instance.score = 0;
+
         SceneManager.LoadScene(1); //Make sure this goes to the overall shop view scene
     }
 
     public void OnMainMenuButton()
     {
+        PersistenceManager.Instance.timer = 0;
+        PersistenceManager.Instance.ordersComplete = 0;
+        PersistenceManager.Instance.score = 0;
+
         SceneManager.LoadScene(0);
     }
 

@@ -11,6 +11,9 @@ public class MessageController : MonoBehaviour
 
     public float timer;
 
+    public GameObject endScreen;
+    public TMP_Text endText;
+
     public void Awake()
     {
         scoreText.text = "Score: " + PersistenceManager.Instance.score;
@@ -18,6 +21,8 @@ public class MessageController : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log("Updating timer message");
+
         timer = PersistenceManager.Instance.timer;
 
         int minutes = Mathf.FloorToInt(timer / 60F);
@@ -25,5 +30,15 @@ public class MessageController : MonoBehaviour
 
         string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
         timerText.text = "Time Remaining: " + niceTime;
+
+        if (PersistenceManager.Instance.timer <= 0)
+        {
+            PersistenceManager.Instance.timer = 0;
+
+            endText.text = "Congratulations!\nYou've completed the day and completed " + PersistenceManager.Instance.ordersComplete + " orders!\n\nYour Final Score: " + PersistenceManager.Instance.score;
+            endScreen.SetActive(true);
+
+            Time.timeScale = 0;
+        }
     }
 }

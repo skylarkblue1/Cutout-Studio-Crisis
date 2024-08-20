@@ -25,5 +25,7 @@ public class PersistenceManager : MonoBehaviour
         
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        Debug.Log("Persistance Manager Awake");
     }
 }
