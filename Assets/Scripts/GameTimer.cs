@@ -19,7 +19,6 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Checking if timer is 0");
         if (PersistenceManager.Instance.timer > 0)
         {
             PersistenceManager.Instance.timer -= Time.deltaTime;

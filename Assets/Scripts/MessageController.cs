@@ -21,8 +21,6 @@ public class MessageController : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("Updating timer message");
-
         timer = PersistenceManager.Instance.timer;
 
         int minutes = Mathf.FloorToInt(timer / 60F);
