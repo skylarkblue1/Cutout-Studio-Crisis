@@ -13,6 +13,7 @@ public class PersistenceManager : MonoBehaviour
     public int customerNumber;
     public int score;
     public int ordersComplete;
+    public float timer;
 
     private void Awake()
     {

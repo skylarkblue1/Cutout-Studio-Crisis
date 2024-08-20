@@ -145,10 +145,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aaf3e44d35060d4fa6597eb9c57e832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  celebDatabaseObj: {fileID: 0}
+  firstName: 
+  lastName: 
+  height: 0
+  eyes: 
+  hair: 
   database: {fileID: 0}
   customerButt: {fileID: 5176105087129950117}
-  messageText: {fileID: 0}
-  customerControllerObj: {fileID: 0}
+  orderMessage: 
   controller: {fileID: 0}
+  spriteManager: {fileID: 0}
   custNum: 0
+  currentSprite: {fileID: 0}

@@ -2541,6 +2541,9 @@ MonoBehaviour:
     - m_Text: Buttercup
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: Ariana
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3507,6 +3510,9 @@ MonoBehaviour:
     - m_Text: Ditch
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
+    - m_Text: "Peque\xF1o"
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4111,8 +4117,8 @@ MonoBehaviour:
   timer: {fileID: 1168255446}
   canvas: {fileID: 1378397769}
   done: {fileID: 1053440318}
-  firstName: {fileID: 1143292084}
-  lastName: {fileID: 1770693963}
+  firstName: {fileID: 1143292086}
+  lastName: {fileID: 1770693965}
   request: {fileID: 1896581822}
   popupOpen: {fileID: 989193410}
 --- !u!114 &2092114733
